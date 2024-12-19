@@ -1,0 +1,14 @@
+{
+  "name": "contact-form-main",
+  "version": "1.0.0",
+  "description": "Contact form",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Tunde Adelani",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
