@@ -99,7 +99,7 @@ body {
       height: 2rem;
       border-radius: 50%;
       border: 1.5px solid #0c7d69;
-      display: inline-block;
+      display: block;
       margin-right: 0.5rem;
       position: relative;
       transition: all 0.3s; }
@@ -107,6 +107,8 @@ body {
         content: "";
         position: absolute;
         background-image: url(../assets/images/icon-radio-selected.svg);
+        background-position: center;
+        background-size: cover;
         width: 2rem;
         height: 2rem;
         top: 45%;
@@ -114,10 +116,6 @@ body {
         transform: translate(-50%, -50%);
         opacity: 0;
         display: inline-block; }
-        @media only screen and (max-width: 37.5em) {
-          .check-query .button-input__label .radio-btn::after {
-            width: 2.5rem;
-            height: 2.5rem; } }
 
 .check-query .button-input__radio:checked ~ .button-input__label {
   background-color: #dff1e7;
@@ -183,13 +181,15 @@ body {
         height: 1.8rem;
         border: none;
         background-image: url(../assets/images/icon-checkbox-check.svg);
+        background-position: center;
+        background-size: cover;
         border-radius: 0.5rem;
         opacity: 0; }
         @media only screen and (max-width: 37.5em) {
           .consent__label .radio-btn::after {
             top: -0.2rem;
-            width: 2.2rem;
-            height: 2.2rem; } }
+            width: 2.1rem;
+            height: 2.1rem; } }
   .consent-radio:checked ~ .consent__label .radio-btn {
     border: none; }
     .consent-radio:checked ~ .consent__label .radio-btn::after {
