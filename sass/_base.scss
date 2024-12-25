@@ -1,3 +1,32 @@
+$color-primary-bg: hsl(148, 38%, 91%);
+$color-lighter-bg: hsl(169, 82%, 27%);
+$color-white: hsl(0, 0%, 100%);
+$color-warning: hsl(0, 66%, 54%);
+$color-grey-700: hsl(186, 15%, 59%);
+$color-grey-900: hsl(187, 24%, 22%);
+
+$bp-largest: 75em; //1200px/16px (1200px)
+$bp-large: 62.5em; //1000px/16px (1000px)
+$bp-mobile: 37.5em;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 50%; // 8px/16px 1rem = 8px
+  }
+}
+
 body {
-  background-color: red;
+  line-height: 1.5;
 }
