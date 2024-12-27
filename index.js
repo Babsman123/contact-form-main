@@ -14,8 +14,11 @@ const radioError = document.querySelector(".error-query");
 const messageError = document.querySelector(".error-message");
 const consentError = document.querySelector(".error-consent");
 
-//REGEX
+//SUCCESS FORM
+const formSuccess = document.querySelector(".form-success");
+const overlay = document.querySelector(".overlay");
 
+console.log(overlay);
 btnForm.addEventListener("click", (e) => {
   e.preventDefault();
   console.log("submit");
@@ -98,8 +101,7 @@ btnForm.addEventListener("click", (e) => {
     textInput &&
     consentSelected
   ) {
-    alert("you are succesfull");
-    console.log("i am not equal to empty string");
-    consentError.style.display = "none";
+    overlay.style.display = "block";
+    formSuccess.style.display = "block";
   }
 });
