@@ -101,7 +101,7 @@ btnForm.addEventListener("click", (e) => {
     textInput &&
     consentSelected
   ) {
-    overlay.style.display = "block";
+    overlay.style.display = "flex";
     formSuccess.style.display = "block";
   }
 });
